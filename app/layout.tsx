@@ -16,7 +16,20 @@ const playfair = Playfair_Display({
 });
 
 const TITLE = `${SITE_NAME} — Nature's Reds. Science-Backed Wellness.`;
-const OG_IMAGE = `${SITE_URL}/images/product-snow.jpeg`;
+const OG_IMAGES = [
+  {
+    url: `${SITE_URL}/images/product-snow.jpeg`,
+    width: 720,
+    height: 478,
+    alt: "Double Red Rose — premium liquid wellness supplement box and sachet",
+  },
+  {
+    url: `${SITE_URL}/images/health-shield.jpeg`,
+    width: 1280,
+    height: 720,
+    alt: "Double Red Rose — antioxidant defense for everyday wellness",
+  },
+] as const;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -63,21 +76,14 @@ export const metadata: Metadata = {
     description:
       "12 active red superfoods + NAC. The premium liquid antioxidant supplement — 15 sachets × 10ml. US FDA certified.",
     locale: "en_US",
-    images: [
-      {
-        url: OG_IMAGE,
-        width: 1200,
-        height: 1200,
-        alt: "Double Red Rose — premium liquid wellness supplement",
-      },
-    ],
+    images: [...OG_IMAGES],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description:
       "12 active red superfoods + NAC. Premium liquid antioxidant supplement.",
-    images: [OG_IMAGE],
+    images: OG_IMAGES.map((i) => i.url),
   },
   robots: {
     index: true,
