@@ -1,26 +1,93 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand palette */
+  --color-cream: #faf6f0;
+  --color-cream-deep: #f3ead9;
+  --color-ivory: #fffdf8;
+  --color-rose: #b0152a;
+  --color-rose-deep: #7a0a1c;
+  --color-rose-light: #d8475a;
+  --color-rose-soft: #f7d8dc;
+  --color-gold: #c8a464;
+  --color-gold-soft: #e6d3a3;
+  --color-ink: #1a0a0d;
+  --color-ink-soft: #4a3539;
+  --color-muted: #8a7679;
+
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--color-cream);
+  --color-cream-deep: var(--color-cream-deep);
+  --color-ivory: var(--color-ivory);
+  --color-rose: var(--color-rose);
+  --color-rose-deep: var(--color-rose-deep);
+  --color-rose-light: var(--color-rose-light);
+  --color-rose-soft: var(--color-rose-soft);
+  --color-gold: var(--color-gold);
+  --color-gold-soft: var(--color-gold-soft);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-muted: var(--color-muted);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-inter),
+    system-ui,
+    -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--color-rose);
+  color: var(--color-ivory);
+}
+
+@utility bg-rose-radial {
+  background: radial-gradient(
+    ellipse at top,
+    var(--color-rose-soft) 0%,
+    var(--color-cream) 60%
+  );
+}
+
+@utility bg-rose-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-rose-deep) 0%,
+    var(--color-rose) 50%,
+    var(--color-rose-light) 100%
+  );
+}
+
+@utility text-balance {
+  text-wrap: balance;
 }
