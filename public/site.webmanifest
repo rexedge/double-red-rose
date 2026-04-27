@@ -1,0 +1,16 @@
+{
+  "name": "Double Red Rose",
+  "short_name": "Double Red Rose",
+  "description": "Nature's reds, science-backed wellness. Premium liquid antioxidant supplement with 12 red superfoods + NAC.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf6f0",
+  "theme_color": "#b0152a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

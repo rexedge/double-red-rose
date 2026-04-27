@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./lib/utils";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,25 +15,97 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const TITLE = `${SITE_NAME} — Nature's Reds. Science-Backed Wellness.`;
+const OG_IMAGE = `${SITE_URL}/images/product-snow.jpeg`;
+
 export const metadata: Metadata = {
-  title: "Double Red Rose — Nature's Reds. Science-Backed Wellness.",
-  description:
-    "Double Red Rose is a premium liquid supplement combining 12 active red superfoods with N-Acetyl Cysteine (NAC) — the precursor to glutathione, the body's master antioxidant. US FDA certified. 15 sachets × 10ml.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: TITLE,
+    template: `%s · ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: "Affluence Global" }],
+  creator: "Affluence Global",
+  publisher: "Affluence Global",
+  category: "Health & Wellness",
   keywords: [
     "Double Red Rose",
     "NAC supplement",
+    "N-Acetyl Cysteine",
     "glutathione",
     "red superfoods",
-    "antioxidant",
-    "wellness",
-    "natural supplement",
+    "antioxidant supplement",
+    "liquid supplement",
+    "immune support",
+    "natural wellness",
+    "FDA certified supplement",
+    "pomegranate supplement",
+    "goji berry",
+    "Korean red ginseng",
+    "wellness Africa",
+    "wellness Ghana",
   ],
-  openGraph: {
-    title: "Double Red Rose — Nature's Reds. Science-Backed Wellness.",
-    description:
-      "12 active red superfoods + NAC. The premium liquid antioxidant supplement.",
-    type: "website",
+  alternates: {
+    canonical: "/",
   },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: TITLE,
+    description:
+      "12 active red superfoods + NAC. The premium liquid antioxidant supplement — 15 sachets × 10ml. US FDA certified.",
+    locale: "en_US",
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 1200,
+        alt: "Double Red Rose — premium liquid wellness supplement",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description:
+      "12 active red superfoods + NAC. Premium liquid antioxidant supplement.",
+    images: [OG_IMAGE],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  manifest: "/site.webmanifest",
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#faf6f0" },
+    { media: "(prefers-color-scheme: dark)", color: "#b0152a" },
+  ],
+  colorScheme: "light",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
