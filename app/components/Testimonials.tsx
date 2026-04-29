@@ -6,21 +6,20 @@ import { Quote } from "lucide-react";
 const stories = [
   {
     quote:
-      "My child had been struggling for months with a condition no medicine could solve. Within weeks of starting Double Red Rose, we saw real, lasting improvement. I am so grateful.",
-    author: "Mother",
-    location: "Cameroon",
+      "This product is so good. This is my 3rd time of purchase. It works wonders.",
+    author: "Stephanie Perkins",
+    location: "Verified Amazon Review",
+  },
+  {
+    quote: "I really love CelGen12. You feel good and energetic.",
+    author: "Sheila Nchangue",
+    location: "Verified Amazon Review",
   },
   {
     quote:
-      "I felt tired and run-down every day. After one box of Double Red Rose, my energy is back, my skin is glowing, and I feel like myself again.",
-    author: "Customer",
-    location: "Zimbabwe",
-  },
-  {
-    quote:
-      "I had tried so many supplements with no result. Double Red Rose is the only one that actually made a difference for my health condition.",
-    author: "Patient",
-    location: "Nigeria",
+      "I was having pain and heaviness in my knee, but after taking this supplement alongside my medication I feel better.",
+    author: "Verified Customer",
+    location: "Amazon Review",
   },
 ];
 
@@ -30,10 +29,10 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-rose">
-            Real stories
+            Real reviews
           </p>
           <h2 className="mt-3 font-display text-4xl font-semibold leading-tight text-ink text-balance sm:text-5xl">
-            Trusted across continents.
+            Rated 4.8/5 by verified Amazon customers.
           </h2>
         </div>
 

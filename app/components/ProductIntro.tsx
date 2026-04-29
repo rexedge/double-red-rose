@@ -20,7 +20,7 @@ export function ProductIntro() {
           transition={{ duration: 0.5 }}
           className="text-sm font-semibold uppercase tracking-[0.18em] text-rose"
         >
-          Meet Double Red Rose
+          Meet CelGen12™ Double Red Rose
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
@@ -29,9 +29,9 @@ export function ProductIntro() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="mt-3 font-display text-4xl font-semibold leading-tight text-ink text-balance sm:text-5xl"
         >
-          A liquid wellness ritual — distilled from{" "}
-          <span className="text-rose">12 red superfoods</span> and powered by
-          NAC.
+          A 12-in-1 dose of wellness —{" "}
+          <span className="text-rose">Asia’s top botanicals</span> and red
+          superfruits, enhanced with NAC and Roselle.
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -40,10 +40,10 @@ export function ProductIntro() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-ink-soft"
         >
-          Each box delivers 15 individually-sealed sachets of pure liquid
+          Each box delivers 15 individually-sealed 10ml sachets of pure liquid
           extract. Take one sachet daily — chilled or at room temperature —
-          straight from the pouch. Designed for absorption, formulated for
-          results.
+          straight from the pouch. No fillers, no sugar added, low-glycemic, no
+          artificial colors.
         </motion.p>
 
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">

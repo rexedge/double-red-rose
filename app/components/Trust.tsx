@@ -6,23 +6,23 @@ import { ShieldCheck, Award, Globe2, Building2 } from "lucide-react";
 const items = [
   {
     icon: ShieldCheck,
-    title: "US FDA Certified",
-    body: "Manufactured to standards recognised by the U.S. Food & Drug Administration.",
+    title: "GMP Certified · FDA-Registered",
+    body: "Manufactured in a GMP-certified, FDA-registered facility and third-party tested for purity.",
   },
   {
     icon: Award,
-    title: "Zimbabwe Industry Award",
-    body: "Honoured by the Zimbabwe Federation of Industry & Commerce for product excellence.",
+    title: "4.8/5 on Amazon",
+    body: "Verified customer reviews praise the energy, focus, and wellness benefits of CelGen12™.",
   },
   {
     icon: Building2,
-    title: "Made by Affluence Global",
-    body: "Produced in China to international quality and safety standards.",
+    title: "By Affluence Global",
+    body: "CelGen12™ Double Red Rose is produced in China to international quality and safety standards.",
   },
   {
     icon: Globe2,
-    title: "African HQ in Ghana",
-    body: "Distributed across Africa from our regional headquarters.",
+    title: "Clean Formula",
+    body: "No fillers, no sugar added, low-glycemic, no artificial colors, no animal testing.",
   },
 ];
 

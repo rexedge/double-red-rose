@@ -1,5 +1,5 @@
 import { MessageCircle } from "lucide-react";
-import { whatsappLink } from "../lib/utils";
+import { AMAZON_URL, LEGAL_DISCLAIMER, whatsappLink } from "../lib/utils";
 
 export function Footer() {
   return (
@@ -14,12 +14,12 @@ export function Footer() {
               <span className="font-display text-lg leading-none">❀</span>
             </span>
             <span className="font-display text-xl font-semibold text-ivory">
-              Double Red Rose
+              CelGen12 Double Red Rose
             </span>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-ivory/70">
-            Nature&apos;s reds, science-backed wellness. A premium liquid
-            antioxidant supplement.
+            A 12-in-1 liquid red superfruit blend with NAC and Roselle. Natural
+            Immune Support Supplement — 15 sachets × 10ml.
           </p>
         </div>
 
@@ -28,10 +28,19 @@ export function Footer() {
             Company
           </h3>
           <ul className="mt-4 space-y-2 text-sm">
-            <li>Manufactured by Affluence Global</li>
+            <li>By Affluence Global</li>
             <li>Made in China</li>
-            <li>African HQ: Ghana</li>
-            <li>US FDA Certified</li>
+            <li>GMP Certified · FDA-Registered Facility</li>
+            <li>
+              <a
+                href={AMAZON_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-4 hover:text-ivory hover:underline"
+              >
+                Available on Amazon
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -41,7 +50,7 @@ export function Footer() {
           </h3>
           <a
             href={whatsappLink(
-              "Hello! I'd like more information about Double Red Rose.",
+              "Hello! I'd like more information about CelGen12 Double Red Rose.",
             )}
             target="_blank"
             rel="noopener noreferrer"
@@ -55,10 +64,12 @@ export function Footer() {
       </div>
 
       <div className="border-t border-ivory/10">
-        <div className="mx-auto max-w-7xl px-5 py-6 text-center text-xs text-ivory/55 sm:px-8">
-          © {new Date().getFullYear()} Double Red Rose. All rights reserved.
-          These statements have not been evaluated by the FDA. This product is
-          not intended to diagnose, treat, cure or prevent any disease.
+        <div className="mx-auto max-w-7xl space-y-2 px-5 py-6 text-center text-xs text-ivory/55 sm:px-8">
+          <p>
+            © {new Date().getFullYear()} CelGen12 Double Red Rose by Affluence
+            Global. All rights reserved.
+          </p>
+          <p>{LEGAL_DISCLAIMER}</p>
         </div>
       </div>
     </footer>

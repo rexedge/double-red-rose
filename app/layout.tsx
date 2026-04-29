@@ -15,19 +15,19 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const TITLE = `${SITE_NAME} — Nature's Reds. Science-Backed Wellness.`;
+const TITLE = `CelGen12 ${SITE_NAME} — Natural Immune Support · 12-in-1 Red Superfruit Blend`;
 const OG_IMAGES = [
   {
-    url: `${SITE_URL}/images/product-snow.jpeg`,
-    width: 720,
-    height: 478,
-    alt: "Double Red Rose — premium liquid wellness supplement box and sachet",
+    url: `${SITE_URL}/images/product-images/pack-in-graphic-design.jpg`,
+    width: 640,
+    height: 640,
+    alt: "CelGen12 Double Red Rose — The Antioxidant Powerhouse, 15 sachets × 10ml",
   },
   {
-    url: `${SITE_URL}/images/health-shield.jpeg`,
-    width: 1280,
-    height: 720,
-    alt: "Double Red Rose — antioxidant defense for everyday wellness",
+    url: `${SITE_URL}/images/product-images/front-view-pack.jpg`,
+    width: 1354,
+    height: 1500,
+    alt: "CelGen12 Double Red Rose Natural Immune Support Supplement — front of pack",
   },
 ] as const;
 
@@ -44,19 +44,26 @@ export const metadata: Metadata = {
   publisher: "Affluence Global",
   category: "Health & Wellness",
   keywords: [
+    "CelGen12",
+    "CelGen12 Double Red Rose",
     "Double Red Rose",
+    "Affluence Global",
+    "natural immune support supplement",
+    "mixed fruit blend",
+    "15 sachets 10ml",
     "NAC supplement",
     "N-Acetyl Cysteine",
+    "Roselle",
+    "Hibiscus sabdariffa",
     "glutathione",
     "red superfoods",
+    "red superfruit blend",
     "antioxidant supplement",
     "liquid supplement",
-    "immune support",
-    "natural wellness",
-    "FDA certified supplement",
     "pomegranate supplement",
     "goji berry",
-    "Korean red ginseng",
+    "acerola cherry",
+    "jujube",
     "wellness Africa",
     "wellness Ghana",
   ],
@@ -74,7 +81,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: TITLE,
     description:
-      "12 active red superfoods + NAC. The premium liquid antioxidant supplement — 15 sachets × 10ml. US FDA certified.",
+      "CelGen12™ Double Red Rose — a 12-in-1 liquid red superfruit blend enhanced with NAC and Roselle. 15 sachets × 10ml. Made in a GMP-certified, FDA-registered facility.",
     locale: "en_US",
     images: [...OG_IMAGES],
   },
@@ -82,7 +89,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description:
-      "12 active red superfoods + NAC. Premium liquid antioxidant supplement.",
+      "CelGen12™ Double Red Rose — 12-in-1 red superfruit blend with NAC + Roselle. 15 × 10ml sachets.",
     images: OG_IMAGES.map((i) => i.url),
   },
   robots: {

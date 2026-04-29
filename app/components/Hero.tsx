@@ -31,28 +31,29 @@ export function Hero() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-rose/20 bg-ivory/70 px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-rose-deep">
             <Sparkles className="h-3.5 w-3.5" aria-hidden />
-            12 Red Superfoods + NAC
+            CelGen12™ · 12-in-1 Red Superfruit Blend
           </div>
 
           <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-ink text-balance sm:text-6xl lg:text-7xl">
-            Nature&apos;s Reds.
+            Elevate Your Morning.
             <br />
             <span className="bg-linear-to-r from-rose-deep via-rose to-rose-light bg-clip-text text-transparent">
-              Science-Backed Wellness.
+              Fuel Your Success.
             </span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-            Double Red Rose is a premium liquid antioxidant supplement combining
-            12 active red superfoods with{" "}
-            <strong className="text-ink">N-Acetyl Cysteine (NAC)</strong> — the
-            precursor to glutathione, your body&apos;s master antioxidant.
+            <strong className="text-ink">CelGen12 Double Red Rose</strong> is a
+            premium liquid Natural Immune Support Supplement — a Mixed Fruit
+            Blend of Asia’s top botanicals and red superfruits, enhanced with{" "}
+            <strong className="text-ink">N-Acetyl Cysteine (NAC)</strong> and{" "}
+            <strong className="text-ink">Roselle</strong>.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href={whatsappLink(
-                "Hello! I'd like to order Double Red Rose ($65). Please share payment & delivery details.",
+                "Hello! I'd like to order CelGen12 Double Red Rose ($65). Please share payment & delivery details.",
               )}
               target="_blank"
               rel="noopener noreferrer"
@@ -72,11 +73,11 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-ink-soft">
             <div className="inline-flex items-center gap-2">
               <ShieldCheck className="h-4 w-4 text-rose" aria-hidden />
-              US FDA Certified
+              GMP Certified · FDA-Registered Facility
             </div>
             <div className="inline-flex items-center gap-2">
               <Award className="h-4 w-4 text-gold" aria-hidden />
-              Zimbabwe Industry & Commerce Award
+              Rated 4.8/5 on Amazon
             </div>
             <div className="inline-flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-rose" aria-hidden />
@@ -94,8 +95,8 @@ export function Hero() {
         >
           <div className="relative mx-auto aspect-4/5 w-full max-w-md overflow-hidden rounded-4xl border border-rose/15 bg-ivory shadow-2xl shadow-rose/10">
             <Image
-              src="/images/product-snow.jpeg"
-              alt="Double Red Rose product box presented on snow"
+              src="/images/product-images/front-view-pack.jpg"
+              alt="CelGen12 Double Red Rose Natural Immune Support Supplement — front of pack with 15 sachets"
               fill
               priority
               sizes="(max-width: 1024px) 90vw, 500px"
@@ -105,7 +106,7 @@ export function Hero() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-wider text-muted">
-                    Premium liquid blend
+                    CelGen12™ · Mixed Fruit Blend
                   </p>
                   <p className="font-display text-lg font-semibold text-ink">
                     Double Red Rose
